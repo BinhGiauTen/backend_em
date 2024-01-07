@@ -40,7 +40,7 @@ const getaBrand = asyncHandler(async (req, res) => {
   validateMongoDbId(id);
   try {
     const getBrand = await Brand.findById(id);
-    res.json(getaBrand);
+    res.json(getBrand);
   } catch (error) {
     throw new Error(error);
   }

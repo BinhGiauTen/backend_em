@@ -40,7 +40,7 @@ const getaEnquiry = asyncHandler(async (req, res) => {
   validateMongoDbId(id);
   try {
     const getEnquiry = await Enquiry.findById(id);
-    res.json(getaEnquiry);
+    res.json(getEnquiry);
   } catch (error) {
     throw new Error(error);
   }
