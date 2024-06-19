@@ -20,7 +20,7 @@ const createUser = asyncHandler(async (req, res) => {
     const newUser = await User.create(req.body);
     res.json(newUser);
   } else {
-    throw new Error("Uer Already Exists");
+    throw new Error("User Already Exists");
   }
 });
 
